@@ -14,7 +14,7 @@ export default function ThemeSwitcher() {
   }, [])
 
   if(!mounted) return null
-  console.log(theme)
+//   console.log(theme)
   return (
     <div>
       {/* The current theme is: {theme} */}
