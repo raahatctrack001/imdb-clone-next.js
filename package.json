@@ -4,13 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run build",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "@heroicons/react": "^2.1.5",
-    "flowbite-react": "^0.10.1",
     "next": "14.2.13",
     "next-themes": "^0.3.0",
     "react": "^18",
