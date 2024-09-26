@@ -1,8 +1,12 @@
 // next.config.mjs
 
-export default {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+    reactStrictMode: true,
     images: {
-      domains: ['image.tmdb.org'],
+      domains: ['image.tmdb.org'], // Add the external image domain here
     },
   };
+  
+  export default nextConfig;
   
