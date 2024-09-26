@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from 'next/image'; //change to commit only
 
 export default async function MoviePage({ params }: {params: {id: number}}) {
   const movieId = params.id;
@@ -6,7 +6,6 @@ export default async function MoviePage({ params }: {params: {id: number}}) {
     `https://api.themoviedb.org/3/movie/${movieId}?api_key=${process.env.API_KEY}`
   );
   const movie = await res.json();
-
   return (
     <div className='w-full'>
       <div className='p-4 md:pt-8 flex flex-col md:flex-row content-center max-w-6xl mx-auto md:space-x-6'>
