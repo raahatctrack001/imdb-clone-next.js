@@ -1,8 +1,27 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import { FiThumbsUp } from 'react-icons/fi';
 
-export default function Card({ result }: {result: any}) {
+export interface Result {
+    backdrop_path: string;
+    id: number;
+    title: string;
+    original_title: string;
+    overview: string;
+    poster_path: string;
+    media_type: string;
+    adult: boolean;
+    original_language: string;
+    genre_ids: number[];
+    popularity: number;
+    release_date: string;
+    video: boolean;
+    vote_average: number;
+    vote_count: number;
+    name?: string;
+    first_air_date?: string;
+  }
+  
+export default function Card({ result }: {result: Result}) {
   return (
     <div className='group cursor-pointer sm:hover:shadow-slate-400 sm:shadow-md rounded-lg sm:border sm:border-slate-400 sm:m-2 transition-shadow duration-200'>
         <Link href={`/movie/${result.id}`}>

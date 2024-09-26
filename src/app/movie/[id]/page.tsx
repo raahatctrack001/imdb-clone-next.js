@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 export default async function MoviePage({ params }: {params: { id: number}}) {
   const movieId = params.id;
   const res = await fetch(

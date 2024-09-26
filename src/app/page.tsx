@@ -1,12 +1,7 @@
 import FetchedResult from '@/components/movieCards/fetchedResult';
-import { useSearchParams } from 'next/navigation';
-import { movieData } from '../../movieData';
-import Loading from './loading';
-
 const API_KEY = process.env.API_KEY;
 
-export default async function Home({ searchParams }: {searchParams: any}) {
-  console.log(searchParams)
+export default async function Home({ searchParams }: {searchParams: { genre: string} }) {
   const genre = searchParams.genre || 'fetchTrending';
   const res = await fetch(
     `https://api.themoviedb.org/3${

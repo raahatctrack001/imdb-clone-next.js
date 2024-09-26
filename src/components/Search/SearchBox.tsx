@@ -18,7 +18,7 @@ export default function SearchBar(){
             return ()=>clearTimeout(timeout)
         }
          
-    }, [searchTerm])
+    }, [searchTerm, router])
     return <div className="w-full grid place-items-center">
         <input 
             value={searchTerm}
