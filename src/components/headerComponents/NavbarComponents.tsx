@@ -7,7 +7,7 @@ type navbarProps = {
     title: string,
     param: string
 }
-export default function ({ title, param }: navbarProps) {
+export default function NavbarComponents({ title, param }: navbarProps) {
   const searchParams = useSearchParams();
   const genre = searchParams.get('genre');
   return (

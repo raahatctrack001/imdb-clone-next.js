@@ -1,4 +1,4 @@
-export default function() {
+export default function about() {
     return (
       <div className='w-full min-h-screen flex flex-col justify-center items-center'>
         <div className="max-w-6xl">
